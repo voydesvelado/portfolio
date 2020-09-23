@@ -1,0 +1,73 @@
+@import "./estilos/_componentes.scss";
+
+/*TYPO*/
+h1 {
+  font-size: 5.8rem;
+  @media screen and (max-width: 400px) {
+    font-size: 4.2rem;
+  }
+}
+
+h3 {
+  font-size: 4.8rem;
+  @media screen and (max-width: 400px) {
+    font-size: 3.2rem;
+  }
+}
+
+h4 {
+  font-size: 3.2rem;
+  @media screen and (max-width: 400px) {
+    font-size: 2.4rem;
+  }
+}
+
+p {
+  font-size: 2.2rem;
+  @media screen and (max-width: 400px) {
+    font-size: 1.8rem;
+  }
+}
+
+/*BUTTONS & ANCHOR*/
+.btn {
+  font-family: inherit;
+  text-align: center;
+  width: 19rem;
+  padding: 1.5rem 5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: #222;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  //margin-top: 3rem;
+  display: inline-block;
+
+  &:hover {
+    background-color: rgb(63, 63, 63);
+  }
+}
+
+a {
+  color: #222;
+  font-size: 2rem;
+}
+
+/*GRID*/
+.grid {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(2.8rem, 6rem) [center-start]
+    repeat(2, [col-start] minmax(min-content, 1fr) [col-end])
+    [center-end] minmax(2.8rem, 6rem) [full-end];
+  grid-template-rows: 90vh;
+
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    grid-template-rows: auto;
+  }
+}
