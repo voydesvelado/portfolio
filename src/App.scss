@@ -3,28 +3,28 @@
 /*TYPO*/
 h1 {
   font-size: 5.8rem;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     font-size: 4.2rem;
   }
 }
 
 h3 {
   font-size: 4.8rem;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     font-size: 3.2rem;
   }
 }
 
 h4 {
   font-size: 3.2rem;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     font-size: 2.4rem;
   }
 }
 
 p {
   font-size: 2.2rem;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     font-size: 1.8rem;
   }
 }
@@ -88,7 +88,7 @@ a {
   grid-template-rows: 90vh;
   align-content: center;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     flex-direction: column;
     grid-template-rows: auto;
   }
