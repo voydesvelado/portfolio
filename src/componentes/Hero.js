@@ -33,7 +33,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+            Github{" "}
           </a>
           | <a href="mailto:contactochka@gmail.com">Email</a> |{" "}
           <a

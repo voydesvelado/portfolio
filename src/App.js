@@ -3,6 +3,7 @@ import Nav from "./componentes/Nav";
 import Hero from "./componentes/Hero";
 import Proyectos from "./componentes/Proyectos";
 import About from "./componentes/About";
+import Footer from "./componentes/Footer";
 import "./App.scss";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Proyectos />
         <About />
+        <Footer />
       </div>
     </>
   );
