@@ -51,6 +51,27 @@ p {
     background-color: rgb(63, 63, 63);
   }
 }
+.btn2 {
+  font-family: inherit;
+  text-align: center;
+  width: 16rem;
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: #222;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  //margin-top: 3rem;
+  display: inline-block;
+
+  &:hover {
+    background-color: rgb(63, 63, 63);
+  }
+}
 
 a {
   color: #222;
