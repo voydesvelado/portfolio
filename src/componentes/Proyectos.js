@@ -20,9 +20,9 @@ export default function Proyectos() {
     });
   }, []);
   return (
-    <div className="proyectos" ref={proyectosRef} id="proyectos">
+    <div className="proyectos" id="proyectos">
       <h3>Proyectos</h3>
-      <div className="gridp">
+      <div className="gridp" ref={proyectosRef}>
         <div className="proy">
           <div className="pica"></div>
           <div className="desc">

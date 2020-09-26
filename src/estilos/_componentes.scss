@@ -1,6 +1,7 @@
 /*Nav*/
 nav {
-  height: 4.7rem;
+  visibility: hidden;
+  height: 4.8rem;
   padding: 0px 6rem;
   background-color: #222;
   color: #fff;
@@ -56,6 +57,9 @@ nav {
 
 /*HERO*/
 main {
+  color: white;
+  visibility: hidden;
+  grid-row-start: 1;
   padding-top: 6rem;
   grid-column: center-start / center-end;
   display: flex;
@@ -65,11 +69,16 @@ main {
 
   @media screen and (max-width: 500px) {
     flex-direction: column;
-    padding-top: 4rem;
+    padding: 6rem 0;
+    padding-bottom: 3.2rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
   }
 
   .hero-a {
-    padding-top: 6rem;
     flex: 0 0 60%;
     opacity: 1;
 
@@ -105,27 +114,18 @@ main {
     }
 
     .avatar {
-      background-image: url("./IMG_20200918_191251-02.jpeg");
-      background-size: cover;
+      background-image: url(./avatarb.jpeg);
       background-position: center;
+      background-size: cover;
+
       height: 40rem;
       width: 40rem;
       background-color: #fff;
       border-radius: 50%;
-
       @media screen and (max-width: 500px) {
         height: 25rem;
         width: 25rem;
         margin-bottom: 4rem;
-      }
-    }
-    .corona {
-      transform: translate(10px, 27px);
-
-      @media screen and (max-width: 500px) {
-        height: 33pt;
-        width: 33pt;
-        transform: translate(8px, 20px);
       }
     }
   }
@@ -134,15 +134,16 @@ main {
 // PROYECTOS
 .proyectos {
   grid-column: full-start / full-end;
-  background-color: #f6f6f6;
+  background-image: linear-gradient(to top, #f6f6f6 0%, #eddafc 100%);
   color: #222;
-  margin-bottom: 12rem;
+  padding-bottom: 4.8rem;
 
   @media screen and (max-width: 500px) {
-    margin: 10rem 0;
+    //margin: 10rem 0;
   }
   h3 {
     margin-left: 6rem;
+    color: #222;
 
     @media screen and (max-width: 500px) {
       margin-left: 0;
@@ -158,7 +159,10 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 40rem));
     grid-auto-rows: auto;
     align-content: center;
-    justify-content: center;
+
+    @media screen and (max-width: 500px) {
+      justify-content: center;
+    }
   }
 
   .proy {
@@ -236,9 +240,10 @@ main {
 .about {
   grid-column: full-start / full-end;
   //test
-  padding: 12rem 6rem;
-  background-color: #222;
-  color: white;
+  padding: 6rem 6rem;
+  padding-top: 9rem;
+  background: #f6f6f6;
+  color: #222;
 
   @media screen and (max-width: 500px) {
     padding: 6rem 6rem;
@@ -260,16 +265,31 @@ main {
       h3 {
         margin-top: 0;
       }
+
+      .btn2 {
+        margin-top: 1rem;
+      }
     }
 
     .img-wrapper {
       flex: 0 0 40%;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
 
+      .corona {
+        transform: translate(10px, 27px);
+
+        @media screen and (max-width: 500px) {
+          height: 33pt;
+          width: 33pt;
+          transform: translate(8px, 20px);
+        }
+      }
+
       .avatarb {
-        background-image: url("./avatarb.jpeg");
+        background-image: url("./IMG_20200918_191251-02.jpeg");
         background-size: cover;
         background-position: center;
         height: 34rem;
@@ -315,6 +335,46 @@ main {
   }
 
   a:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
+  }
+}
+
+.bg {
+  width: 0%;
+  grid-column: full-start / full-end;
+  grid-row-start: 1;
+  height: 100%;
+  background: #222;
+  z-index: -1;
+}
+
+.tools {
+  grid-column: center-start / center-end;
+  padding: 3rem 0;
+
+  h4 {
+    margin-top: 0;
+  }
+
+  .gridt {
+    display: grid;
+    grid-gap: 2rem;
+
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 10rem));
+
+    @media screen and (max-width: 500px) {
+      justify-content: center;
+    }
+
+    .tool {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.3rem;
+
+      background-color: rgb(230, 227, 227);
+      padding: 1rem 5rem;
+      border-radius: 50px;
+    }
   }
 }

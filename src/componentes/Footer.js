@@ -9,21 +9,21 @@ export default function Footer() {
 
   useEffect(() => {
     gsap.from(contactoRef.current, {
-      duration: 1.3,
-      y: 50,
+      duration: 1,
+      y: 30,
       opacity: 0,
-      ease: "Power3.in",
+      ease: "Power3.out",
       scrollTrigger: {
-        id: "contacto",
+        trigger: contactoRef.current,
         toggleActions: "play none none reverse",
-        start: "top center",
+        start: "top bottom",
       },
     });
   }, []);
 
   return (
-    <div className="wrap" ref={contactoRef}>
-      <h4 id="contacto">Trabajemos juntos</h4>
+    <div className="wrap" id="contacto" ref={contactoRef}>
+      <h4>Trabajemos juntos</h4>
       <a href="mailto:contactochka@gmail.com">contactochka@gmail.com</a>
     </div>
   );

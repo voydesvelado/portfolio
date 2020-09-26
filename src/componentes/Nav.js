@@ -1,8 +1,16 @@
-import React from "react";
+import gsap from "gsap/gsap-core";
+import React, { useEffect, useRef } from "react";
 
 export default function Nav() {
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(navRef.current, 0, { css: { visibility: "visible" } });
+    gsap.from(navRef.current, { opacity: 0, duration: 1, delay: 1.8 });
+  }, []);
+
   return (
-    <nav>
+    <nav ref={navRef}>
       <h4>David Herrera</h4>
       <ul>
         <li>

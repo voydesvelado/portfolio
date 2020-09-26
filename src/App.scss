@@ -39,7 +39,7 @@ p {
   text-decoration: none;
   outline: none;
   border: none;
-  background: #222;
+  background-image: linear-gradient(to top, #cd9cf2 0%, #fa71cd 100%);
   color: #fff;
   font-size: 2rem;
   cursor: pointer;
@@ -69,7 +69,7 @@ p {
   display: inline-block;
 
   &:hover {
-    background-color: rgb(63, 63, 63);
+    //background-color: rgb(63, 63, 63);
   }
 }
 
@@ -85,7 +85,7 @@ a {
     [full-start] minmax(2.8rem, 6rem) [center-start]
     repeat(2, [col-start] minmax(min-content, 1fr) [col-end])
     [center-end] minmax(2.8rem, 6rem) [full-end];
-  grid-template-rows: 90vh;
+  grid-template-rows: 100vh;
   align-content: center;
 
   @media screen and (max-width: 500px) {
