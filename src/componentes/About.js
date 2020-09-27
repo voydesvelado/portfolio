@@ -95,7 +95,7 @@ export default function About() {
             href="/public/herreraux.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            download
+            download="cv.pdf"
           >
             cv &darr;
           </a>
