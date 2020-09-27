@@ -92,10 +92,9 @@ export default function About() {
           </p>
           <a
             className="btn2"
-            href="/public/herreraux.pdf"
+            href="https://drive.google.com/file/d/18fAF0UAPnEr1Td2MeVkrBWG-rQi0-hhA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            download="cv.pdf"
           >
             cv &darr;
           </a>
